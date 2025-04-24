@@ -24,12 +24,12 @@ A Streamlit web app that simulates an email system with **digital signature supp
 ```
 Email-with-Message-Integrity-Service/
 ├── app.py                  ← Streamlit web app
-├── keygen_multi.py         ← Generate keys for multiple users
+├── keygen.py         ← Generate keys for multiple users
 ├── users/                  ← Folder containing all user key folders
-│   ├── alice/
-│   │   ├── private_key.pem
-│   │   └── public_key.pem
-│   └── bob/
+│   ├── ex alice/
+│   │   ├── ex private_key.pem
+│   │   └── ex public_key.pem
+│   └── ex bob/
 │       ├── ...
 ├── credentials.json        ← Gmail OAuth2 credentials
 ├── token.json              ← Auto-generated after first login
@@ -41,7 +41,7 @@ Email-with-Message-Integrity-Service/
 
 ## 🔐 Setup: Generate Key Pairs for Users
 
-Edit the list of users in `keygen_multi.py`, then run:
+Edit the list of users in `keygen.py`, then run:
 
 ```bash
 python keygen_multi.py
